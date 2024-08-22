@@ -19,7 +19,7 @@ This web application, built with React, TypeScript, and Vite, allows users to ex
 
 ## Demo
 
-Check out the live demo of the application [here]()
+Check out the live demo of the application [here](https://nasa-react-app-ten.vercel.app/)
 
 ## Getting Started
 
