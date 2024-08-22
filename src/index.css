@@ -151,3 +151,26 @@ footer button:hover {
     margin: unset;
   }
 }
+
+.loading-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    animation: spin 1s linear infinite;
+}
+
+.loading-state svg {
+    opacity: 0.2;
+    font-size: 4rem;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+}
