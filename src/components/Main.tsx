@@ -1,11 +1,14 @@
 interface Props {
-
+    data: {
+        url: string
+        title: string
+    }
 }
 
-export const Main = (props: Props) => {
+export const Main = ({ data }: Props) => {
     return (
         <div className="img-container">
-            <img src="mars.png" alt="mar demo picture" className="bg-image" />
+            <img src={data.url} alt={data.title || 'bg image'} className="bg-image" />
         </div>
     )
 }
