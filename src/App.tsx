@@ -6,7 +6,6 @@ import { SideBar } from "./components/SideBar"
 function App() {
     const [showModal, setShowModal] = useState(false)
     const [data, setData] = useState(null)
-    const [loading, setLoading] = useState(false)
 
     const handleToggleModal = () => {
         setShowModal(!showModal)
@@ -34,8 +33,8 @@ function App() {
                 localStorage.setItem(localKey, JSON.stringify(apiData))
                 setData(apiData)
                 console.table(apiData);
-            } catch (err) {
-                console.log(err.message);
+            } catch (err: any) {
+                console.log(err);
             }
         }
         fetchApiData()
@@ -50,7 +49,7 @@ function App() {
                 </div>
             )}
             {showModal && (
-                <SideBar data={data} handleToggleModal={handleToggleModal} />
+                data && <SideBar data={data} handleToggleModal={handleToggleModal} />
             )}
             {data && (
                 <Footer data={data} showModal={showModal} handleToggleModal={handleToggleModal} />
