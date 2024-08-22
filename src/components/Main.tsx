@@ -4,6 +4,8 @@ interface Props {
 
 export const Main = (props: Props) => {
     return (
-        <img src="mars.png" alt="mar demo picture" />
+        <div className="img-container">
+            <img src="mars.png" alt="mar demo picture" className="bg-image" />
+        </div>
     )
 }
