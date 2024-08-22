@@ -5,6 +5,7 @@ interface Props {
 export const Footer = (props: Props) => {
     return (
         <footer>
+            <div className="bg-gradient"></div>
             <div>
                 <h2>The brutal Marcial Landscape</h2>
                 <h1>APOD PROJECT</h1>
